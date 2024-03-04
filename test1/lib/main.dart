@@ -65,7 +65,6 @@ class MyApp extends StatelessWidget {
                             ),
                           ),
                           const SizedBox(height: 20),
-                              // Todo Item
                               StreamBuilder(
                                   stream: FirebaseFirestore.instance.collection('todo').orderBy('name').snapshots(),
                                   builder: (context, snapshot) {
